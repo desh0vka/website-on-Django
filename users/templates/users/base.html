@@ -1,0 +1,14 @@
+
+<html>
+    <head>
+        <title>Пользователи</title>
+    </head>
+    <body>
+        <div class="page-header">
+            <a href="{% url 'user_new' %}" class="top-menu">Регистрация<span class="glyphicon glyphicon-plus"></span></a>
+        </div>
+
+                    {% block content %}
+                    {% endblock %}
+    </body>
+</html>

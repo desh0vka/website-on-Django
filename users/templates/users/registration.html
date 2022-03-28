@@ -1,0 +1,14 @@
+{% extends 'users/base.html' %}
+
+{% block content %}
+<div>
+    <h1>Регистрация</h1>
+</div>
+
+<h1>Новый пользователь</h1>
+    <form method="POST" class="post-form">{% csrf_token %}
+        {{ form.as_p }}
+        
+        <button type="submit" class="save btn btn-default">Save</button>
+    </form>
+{% endblock %}
