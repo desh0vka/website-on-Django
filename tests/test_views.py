@@ -34,9 +34,10 @@ class UserListViewTest(TestCase):
         self.assertTrue( len(resp.context['users']) == 10)
 
     def test_lists_all_users(self):
-        #Get second page and confirm it has (exactly) remaining 3 items
+        #Get second page and confirm it has (exactly) remaining 3 items FFFFFFFFFFFFFFFFFFFF
         resp = self.client.get(reverse('users'))
         self.assertEqual(resp.status_code, 200)
         self.assertTrue('username' in resp.context)
         self.assertTrue(resp.context['users'] == True)
         self.assertTrue( len(resp.context['users']) == 3)
+        
